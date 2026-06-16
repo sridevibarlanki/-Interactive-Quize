@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz & API Dashboard</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<section id="home" class="hero">
+    <p>Responsive Web Development Project</p>
+</section>
+
+<section id="quiz" class="glass-card">
+    <h2>Interactive Quiz</h2>
+
+    <div id="question"></div>
+
+    <div id="options"></div>
+
+    <div class="buttons">
+        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <button id="submitBtn" onclick="showResult()">
+        Submit Quiz
+    </button>
+
+    <h3 id="result"></h3>
+</section>
+
+<section id="api" class="glass-card">
+    <h2>Random Joke API</h2>
+
+    <button onclick="getJoke()">Get Joke</button>
+
+    <div id="jokeBox">
+        Click button to load joke
+    </div>
+</section>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
